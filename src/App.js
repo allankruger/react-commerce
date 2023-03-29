@@ -5,15 +5,19 @@ import { Product } from "./pages/Product";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 import { GlobalStyle } from "./styles/global";
+import { ThemeProvider } from "styled-components";
+import { defaultTheme } from "./styles/themes/default";
 
 const Layout = () => {
   return (
-    <div className="app">
-      <GlobalStyle />
-      <Navbar />
-      <Outlet />
-      <Footer />
-    </div>
+    <ThemeProvider theme={defaultTheme}>
+      <div className="app">
+        <GlobalStyle />
+        <Navbar />
+        <Outlet />
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 };
 

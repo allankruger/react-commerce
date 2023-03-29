@@ -33,7 +33,7 @@ export const NavbarContainer = styled.div`
       .icons {
         display: flex;
         gap: 1rem;
-        color: #777;
+        color: ${(props) => props.theme["gray-500"]};
         cursor: pointer;
 
         .cartIcon {
@@ -43,8 +43,8 @@ export const NavbarContainer = styled.div`
             width: 20px;
             height: 20px;
             border-radius: 50%;
-            background: #2879fe;
-            color: white;
+            background: ${(props) => props.theme["blue-300"]};
+            color: ${(props) => props.theme["white"]};
             position: absolute;
             right: -10px;
             top: -10px;
