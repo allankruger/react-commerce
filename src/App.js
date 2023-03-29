@@ -4,10 +4,12 @@ import { Category } from "./pages/Category";
 import { Product } from "./pages/Product";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
+import { GlobalStyle } from "./styles/global";
 
 const Layout = () => {
   return (
     <div className="app">
+      <GlobalStyle />
       <Navbar />
       <Outlet />
       <Footer />
