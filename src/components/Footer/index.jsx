@@ -46,7 +46,7 @@ export const Footer = () => {
 
       <div className="bottom">
         <div className="left">
-          <span className="logo"></span>
+          <span className="logo">React Commerce&nbsp;</span>
 
           <span className="copyright">
             &#169; Copyright 2023. All rights reserved.
