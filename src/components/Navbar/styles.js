@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NavbarContainer = styled.div`
-  height: 5rem;
+  height: 80px;
 
   .wrapper {
     display: flex;
@@ -39,9 +39,9 @@ export const NavbarContainer = styled.div`
         .cartIcon {
           position: relative;
           span {
-            font-size: 12px;
-            width: 20px;
-            height: 20px;
+            font-size: 0.75rem;
+            width: 1.25rem;
+            height: 1.25rem;
             border-radius: 50%;
             background: ${(props) => props.theme["blue-300"]};
             color: ${(props) => props.theme["white"]};
